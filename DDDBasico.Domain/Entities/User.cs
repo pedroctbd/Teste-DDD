@@ -1,6 +1,3 @@
-using Swashbuckle.AspNetCore.Annotations;
-using System.Data;
-
 namespace DDDBasico.Domain.Entities
 {
     public class User
