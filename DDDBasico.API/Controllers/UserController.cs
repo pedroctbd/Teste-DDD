@@ -4,7 +4,6 @@ using DDDBasico.Application.Users.Command;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging; // <- add this
 
 namespace DDDBasico.API.Controllers
 {
@@ -13,7 +12,7 @@ namespace DDDBasico.API.Controllers
     public class UserController : ControllerBase
     {
         private readonly IMediator _mediator;
-        private readonly ILogger<UserController> _logger; // <- add logger
+        private readonly ILogger<UserController> _logger; 
 
         public UserController(IMediator mediator, ILogger<UserController> logger)
         {
